@@ -1,0 +1,1526 @@
+//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel-Booking-Kerala!</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Times New Roman';
+    }
+
+    body {
+      background-image: url('images/background1.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      
+    }
+
+    header {
+      font-size: 60px;
+      font-style: oblique;
+      font-weight: bold;
+      color: black;
+      position: relative;
+    }
+
+    nav {
+      padding: 10px 20px;
+      position: relative;
+
+    }
+
+    .container{
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .description{
+      padding:10px;
+      text-align: left;
+      margin:20%;
+      font-size:19px;
+      background-color: rgba(255, 255, 255, 0.2);
+      font-family:'times new roman';
+    }
+
+    .index, .destn, .contacts, .booking {
+      background-color: black;
+      color: white;
+      margin-right: 10px;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: solid 2px white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .index:hover, .destn:hover, .contacts:hover, .booking:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+    }
+
+    .index:active, .destn:active, .contacts:active, .booking:active {
+      opacity: 0.7;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>Palm & Tide</header>
+
+  <nav >
+    <a class="index" href="index.html">Home</a>
+    <a class="destn" href="destinations.html">Destinations</a>
+    <a class="contacts" href="contact.html">Contacts</a>
+    <a class="booking" href="booking.html">Booking</a>
+  </nav>
+
+  <main>
+    <p style="padding:10px;
+    text-align:center;
+    color:grey;
+    font-weight:bolder;"
+    >Kerala – Where every trail leads to paradise.</p>
+    <p style="padding:10px;
+    text-align:center;
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+    ">Welcome to <strong>Palm & Tide</strong>! Discover the best tours and experiences in God's Own Country.</p>
+  </main>
+  </div>
+  <div class="description">
+    <strong>Discover Serenity in God’s Own Country </strong>
+    <br><br>
+    Nestled between lush green hills and the Arabian Sea, 
+    Kerala invites you to slow down, breathe deeply, 
+    and experience life at its most tranquil. From 
+    the soothing rhythms of the backwaters to the 
+    vibrant energy of cultural festivals, 
+    <i><b>Palm & Tide</b></i> brings you handpicked journeys 
+    that celebrate the beauty, tradition, 
+    and soul of this tropical paradise.
+    <br><br>
+    Let your next adventure begin here.
+  </div>
+
+</body>
+</html>
+
+//destinations.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel-Booking-Kerala!</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .destination-img {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .destination-img:active {
+      transform: scale(0.9);
+    }
+
+    .main {
+      font-family: Tahoma;
+    }
+
+    .index, .destn, .contacts, .booking {
+      background-color: black;
+      color: white;
+      margin-right: 10px;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: solid;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Times;
+    }
+
+    .index:hover, .destn:hover, .contacts:hover, .booking:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+    }
+
+    .index:active, .destn:active, .contacts:active, .booking:active {
+      opacity: 0.7;
+    }
+
+    h3 {
+      font-size: 25px;
+      text-transform: uppercase;
+      color: black;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    section {
+      margin-bottom: 22px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header style="
+    height: 50px;
+    padding: 10px;
+    font-size: 70px;
+    margin-bottom: 60px;
+    font-style: oblique;
+    text-align: center;
+    font-weight: bold;">Palm & Tide</header>
+
+  <nav style="block-size: 30px; text-align: center;">
+    <a class="index" href="index.html">Home</a>
+    <a class="destn" href="destinations.html">Destinations</a>
+    <a class="contacts" href="contact.html">Contacts</a>
+    <a class="booking" href="booking.html">Booking</a>
+  </nav>
+
+  <main class="main">
+    <h2 style="margin-top: 30px; margin-bottom: 25px;">Popular / Must-visit Destinations</h2>
+
+    <section>
+      <h3>Munnar</h3>
+      <a href="munnar.html"><img class="destination-img" src="https://www.sreestours.com/blog/wp-content/uploads/2020/03/Munnar-Kerala-feature-image.jpg"/></a>
+      <p>A picturesque hill station in the Western Ghats, Munnar is known for its rolling tea plantations, misty valleys, and scenic viewpoints like Echo Point and Top Station.</p>
+      <p><i><b>Discover the charm of misty tea hills—tap the image to journey into Munnar!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Alleppey</h3>
+      <a href="Alleppey.html"><img class="destination-img" src="https://www.trawell.in/admin/images/upload/188158299alleppey.jpg" width="100%"/></a>
+      <p>Also known as Alappuzha, this backwater paradise offers serene houseboat cruises through canals, lagoons, and paddy fields, giving visitors a true taste of Kerala's rural charm.</p>
+      <p><i><b>Sail through the serene backwaters—click the image to explore Alleppey!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Varkala</h3>
+      <a href="Varkala.html"><img class="destination-img" src="https://static3.clubmahindra.com/storage/app/media/Resort/Club%20Mahindra%20Ashtamudi%20Kerala/Varkala-Beach_414794164.jpg"/></a>
+      <p>Famous for its red cliffs and stunning beach views, Varkala is a peaceful coastal town offering yoga retreats, Ayurvedic spas, and the sacred Janardhana Swamy Temple.</p>
+      <p><i><b>Unwind on the cliffs by the sea—dive into Varkala by clicking the image!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Wayanad</h3>
+      <a href="Wayanad.html"><img class="destination-img" src="https://www.keralatourism.org/images/microsites/wayanad/waynadu-1024x768.jpg"/></a>
+      <p>Rich in natural beauty, Wayanad is a green escape with waterfalls, caves, wildlife sanctuaries, and coffee plantations. Chembra Peak and Edakkal Caves are major attractions.</p>
+      <p><i><b>Wander into the wild green hills—click the picture for Wayanad’s secrets!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Kovalam</h3>
+      <a href="Kovalam.html"><img class="destination-img" src="https://pixahive.com/wp-content/uploads/2020/12/kovalam-beach-253563-pixahive.jpg"/></a>
+      <p>A beach lover's destination near Trivandrum, Kovalam is popular for its crescent-shaped beaches, the iconic lighthouse, and water sports like surfing and parasailing.</p>
+      <p><i><b>Feel the breeze and waves—click the photo to step into Kovalam’s shores!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Thekkady</h3>
+      <a href="Thekkady.html"><img class="destination-img" src="https://irisholidays.com/keralatourism/wp-content/uploads/2020/02/best-things-to-do-in-thekkady.jpg"/></a>
+      <p>Home to the Periyar Wildlife Sanctuary, Thekkady offers opportunities for jungle safaris, boating on Periyar Lake, and exploring spice plantations and elephant camps.</p>
+      <p><i><b>Venture into the jungle depths—tap the image to discover Thekkady!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Kumarakom</h3>
+      <a href="Kumarakom.html"><img class="destination-img" src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/12/Kumarakom-Attractions-1.jpg?fit=1200%2C799&ssl=1"/></a>
+      <p>Located on the banks of Vembanad Lake, Kumarakom is a tranquil village known for its bird sanctuary, luxury houseboats, and beautiful backwater scenery.</p>
+      <p><i><b>Glide into peaceful waters—start your Kumarakom escape by clicking the picture!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Kochi</h3>
+      <a href="Kochi.html"><img class="destination-img" src="https://s1.it.atcdn.net/wp-content/uploads/2013/10/Sunset-over-Chinese-Fishing-nets-and-boat-in-Cochin-Kochi-Kerala-India-shutterstock_104171129.jpg"/></a>
+      <p>A historic port city, Kochi (Cochin) blends colonial architecture with modern culture. Fort Kochi, Chinese fishing nets, and art cafés make it a cultural hotspot.</p>
+      <p><i><b>Step into culture and history—click here to uncover Kochi’s charm!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Trivandrum</h3>
+      <a href="Trivandrum.html"><img class="destination-img" src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1615498078_20200302153343.jpg"/></a>
+      <p>The capital city of Kerala, Trivandrum is known for the Padmanabhaswamy Temple, rich heritage, art museums, and nearby beaches like Shanghumukham and Kovalam.</p>
+      <p><i><b>Explore the capital’s temples and coast—begin your Trivandrum trip now!</b></i></p>
+    </section>
+
+    <section>
+      <h3>Guruvayur</h3>
+      <a href="Guruvayur.html"><img class="destination-img" src="https://trisoj.com/travel-guide/wp-content/uploads/2022/10/Famous-Temple-in-Guruvayur-1024x576.jpg"/></a>
+      <p>One of the most sacred pilgrimage sites in Kerala, Guruvayur is home to the Guruvayurappan Temple, dedicated to Lord Krishna, and attracts thousands of devotees daily.</p>
+      <p><i><b>Feel the spiritual energy—tap the image to visit divine Guruvayur!</b></i></p>
+    </section>
+  </main>
+
+  <footer style="font-weight: bold; margin-top: 20px; text-align: right;">
+    © 2025 Palm & Tide | All Rights Reserved
+  </footer>
+
+</body>
+</html>
+
+//contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel-Booking-Kerala!</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    section{
+      padding-top:30px;
+      display:grid;
+      place-content:center;
+      color:white;
+
+    }
+
+    .container{
+      width:500px;
+      height:550px;
+      background-color: rgb(0, 0, 0, 0.5);
+      backdrop-filter:blur(1px);
+      border-radius:15px;
+      border:3px solid rgba(255,255,255,0.3);
+    }
+
+    h2{
+      color:white;
+      text-transform:uppercase;
+      padding-left:20px;
+      padding-right:20px;
+      padding-top:20px;
+      padding-bottom:20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-group{
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-group input{
+      width:100%;
+      height:50px;
+      padding:0 20px;
+      border:none;
+      outline:none;
+      font-size:1em;
+      margin:10px;
+    }
+
+    .form-group textarea{
+      border:none;
+      outline:none;
+      width:100%;
+      resize:none;
+      padding:20px;
+      margin:10px;
+      font-size:1em;
+    }
+
+    #send{
+      width:40%;
+      height:50px;
+      margin-left:10px;
+      font-size:1em;
+      font-weight:bold;
+      border-radius:5px;
+      cursor:pointer;
+      transition:0.5s;
+    }
+    #send:hover{
+      color:white;
+      background-color:black;
+      
+    }
+    #send:active{
+      opacity:1;
+    }
+
+    .navigation{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .index,.destn,.contacts,.booking{
+    background-color:black;
+    color:white;
+    margin-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid;
+    font-weight:bold;
+    cursor:pointer;
+    font-family:Times;
+  }
+  .index:hover,.destn:hover,.contacts:hover,.booking:hover {
+  background-color: white;
+  color: rgb(6, 39, 78);
+  border-color: rgb(6, 39, 78);
+  }
+
+.index:active,.destn:active,.contacts:active,.booking:active {
+  opacity: 0.7;
+  }
+
+  </style>
+
+</head>
+<body>
+
+  <header style="
+    height:50px;
+    margin-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    font-size:70px;
+    margin-bottom:50px;
+    font-style:oblique;
+    text-align:center;">Palm & Tide</header>
+
+  <nav class="navigation">
+    <a class="index" href="index.html">Home</a>
+    <a class="destn" href="destinations.html">Destinations</a>
+    <a class="contacts" href="contact.html">Contacts</a>
+    <a class="booking" href="booking.html">Booking</a>
+  </nav>
+
+  <section>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Whether 
+          you're looking to book your dream getaway,
+          need help customizing your itinerary, 
+          or simply have a question about our 
+          services — feel free to reach out. 
+          Our team is here to assist you every 
+          step of the way to make your Kerala 
+          travel experience truly unforgettable.
+        </p>
+        <form action="">
+
+          <div class="form-group">
+            <input type="text" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Enter E-mail">
+          </div>
+          <div class="form-group">
+            <textarea cols="" rows="5" placeholder="Enter your message.."></textarea>
+          </div>
+
+          <input id="send" type="submit" value="Send">
+        </form>
+      </div>
+    
+
+  </section>
+<footer style="position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color:black;
+  font-size: 15px;
+  font-family: Arial;">
+  © 2025 Palm & Tide | All Rights Reserved
+</footer>
+
+</body>
+</html>
+
+
+//booking.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel-Booking-Kerala!</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000; /* fallback color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .background-wrapper {
+      width: 90%;
+      max-width: 1000px;
+      background: url('images/background1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    header {
+      font-size: 60px;
+      font-style: oblique;
+      text-align: center;
+      color:black;
+      font-weight:bold;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      gap: 10px;
+    }
+
+    .index, .destn, .contacts, .booking {
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      border: solid 1px black;
+      font-weight: bold;
+      font-family: Times;
+    }
+
+    .index:hover, .destn:hover, .contacts:hover, .booking:hover {
+      background-color: white;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .booking-form {
+      color:black;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    #date {
+      cursor: pointer;
+    }
+
+    .booking-form button {
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .booking-form button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      text-align: right;
+      margin-top: 20px;
+      color: black;
+      font-size: 15px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-wrapper">
+    <header>Palm & Tide</header>
+
+    <nav>
+      <a class="index" href="index.html">Home</a>
+      <a class="destn" href="destinations.html">Destinations</a>
+      <a class="contacts" href="contact.html">Contacts</a>
+      <a class="booking" href="booking.html">Booking</a>
+    </nav>
+
+    <div class="booking-container">
+      <h1>Book your Trip</h1>
+      <form action="#" method="post" class="booking-form">
+
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="">--Select Destination--</option>
+          <option value="Munnar">Munnar</option>
+          <option value="Alleppey">Alleppey</option>
+          <option value="Varkala">Varkala</option>
+          <option value="Wayanad">Wayanad</option>
+          <option value="Kovalam">Kovalam</option>
+          <option value="Thekkady">Thekkady</option>
+          <option value="Kumarakom">Kumarakom</option>
+          <option value="Kochi">Kochi</option>
+          <option value="Trivandrum">Trivandrum</option>
+          <option value="Guruvayur">Guruvayur</option>
+        </select>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telephone">Contact No</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="start-date">Start-Date</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="end-date">End-Date</label>
+        <input type="date" id="end-date" name="end-date" required>
+
+        <label for="special-requests">Special Requests</label>
+        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any preferences or requests..."></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+
+    <footer>© 2025 Palm & Tide | All Rights Reserved</footer>
+  </div>
+</body>
+</html>
+
+
+//Alleppey.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alleppey</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Alleppey</h1>
+
+  <h2>1. Alappuzha Backwaters</h2>
+  <img class="sub" src="https://lostwithpurpose.com/wp-content/uploads/2016/12/DSC_3368.jpg" />
+  <p><strong>Location:</strong> Central Alleppey</p>
+  <p><strong>Timings:</strong> Open all day</p>
+  <p><strong>Entry Fee:</strong> Varies by houseboat</p>
+  <p><strong>Highlights:</strong> Houseboat Cruise, Lagoons, Canals</p>
+
+  <h2>2. Alleppey Beach</h2>
+  <img class="sub" src="https://www.keralabackwater.com/blog/wp-content/uploads/2017/03/alleppey-beach.jpg" />
+  <p><strong>Location:</strong> Near Alappuzha Railway Station</p>
+  <p><strong>Timings:</strong> 5:00 AM – 7:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Sunset Views, 150-Year-Old Pier</p>
+
+  <h2>3. Marari Beach</h2>
+  <img class="sub" src="https://static.toiimg.com/photo/msid-48538939,width-96,height-65.cms" />
+  <p><strong>Location:</strong> 11 km from Alleppey</p>
+  <p><strong>Timings:</strong> Sunrise to Sunset</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Relaxing Beach, Quiet Atmosphere</p>
+
+  <h2>4. Ambalapuzha Sri Krishna Temple</h2>
+  <img class="sub" src="https://www.inboundtrip.com/blog/wp-content/uploads/2022/05/ambalapuzha.jpg" />
+  <p><strong>Location:</strong> Ambalapuzha, 14 km from Alleppey</p>
+  <p><strong>Timings:</strong> 3:00 AM – 12:00 PM, 5:00 PM – 8:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Ancient Temple, Palpayasam Offering</p>
+
+  <h2>5. Pathiramanal Island</h2>
+  <img class="sub" src="https://www.dtpcalappuzha.com/uploads/picture_gallery/gallery_images/pathiramanal-island-20230524133601418589.webp" />
+  <p><strong>Location:</strong> Vembanad Lake</p>
+  <p><strong>Timings:</strong> 6:00 AM – 6:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free (boat cost extra)</p>
+  <p><strong>Highlights:</strong> Birdwatching, Island Walks</p>
+
+  <h2>6. St. Mary’s Forane Church</h2>
+  <img class="sub" src="https://img.veenaworld.com/wp-content/uploads/2020/05/St.Mary%E2%80%99s-Forane-Church.jpg?imwidth=1080" />
+  <p><strong>Location:</strong> Champakulam, 15 km from Alleppey</p>
+  <p><strong>Timings:</strong> 6:00 AM – 6:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Historic Church, Murals, Syrian Architecture</p>
+
+  <h2>7. Vembanad Lake</h2>
+  <img class="sub" src="https://keralatourism.travel/images/places-to-visit/headers/vembanad-lake-alleppey-tourism-entry-fee-timings-holidays-reviews-header.jpg" />
+  <p><strong>Location:</strong> Spreads across Alleppey, Kumarakom</p>
+  <p><strong>Timings:</strong> All day</p>
+  <p><strong>Entry Fee:</strong> Free (boating extra)</p>
+  <p><strong>Highlights:</strong> Boating, Birdwatching, Sunset Views</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+
+//Guruvayur.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1
+    style="
+      font-size: 40px;
+      text-align: center;
+      color: rgb(6, 39, 78);
+      text-decoration: underline;
+    "
+  >
+    Must-Visit Places in Guruvayur
+  </h1>
+
+  <h2>1. Guruvayur Sri Krishna Temple</h2>
+  <img
+    class="sub"
+    src="https://dheivegam.com/wp-content/uploads/2018/04/guruvayoor-temple_1-768x576.jpg"
+    alt="Guruvayur Temple"
+  />
+  <p><strong>Location:</strong> Guruvayur town, Thrissur district</p>
+  <p><strong>Timings:</strong> 3:00 AM – 12:00 PM, 5:00 PM – 8:30 PM</p>
+  <p><strong>Entry Fee:</strong> Free (Strict dress code)</p>
+  <p><strong>Highlights:</strong> Ancient Krishna Temple, Rituals, Elephant Sanctuary</p>
+
+  <h2>2. Mammiyur Temple</h2>
+  <img
+    class="sub"
+    src="https://mammiyurmahadevatemple.com/uploads/gallery/22.jpg"
+    alt="Mammiyur Temple"
+  />
+  <p><strong>Location:</strong> Near Guruvayur Temple</p>
+  <p><strong>Timings:</strong> 5:30 AM – 12:30 PM, 5:00 PM – 8:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Shiva Temple, Rituals, Quiet Ambiance</p>
+
+  <h2>3. Punnathur Kotta Elephant Sanctuary</h2>
+  <img
+    class="sub"
+    src="https://i.ytimg.com/vi/eCD5_5IGtPI/maxresdefault.jpg"
+    alt="Punnathur Kotta"
+  />
+  <p><strong>Location:</strong> 3 km from Guruvayur Temple</p>
+  <p><strong>Timings:</strong> 9:00 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹20</p>
+  <p><strong>Highlights:</strong> Elephant Care, Feeding, Photography</p>
+
+  <div style="text-align: center; color: rgb(6, 39, 78); font-size: 30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//Kochi.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Kochi</h1>
+
+  <h2>1. Fort Kochi</h2>
+  <img class="sub" src="https://www.optimatravels.com/images/kerala-images/fort-kochi-head.jpg" />
+  <p><strong>Location:</strong> Fort Kochi, Ernakulam</p>
+  <p><strong>Timings:</strong> Open all day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Colonial Architecture, Chinese Fishing Nets, Art Cafés</p>
+
+  <h2>2. Mattancherry Palace</h2>
+  <img class="sub" src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-motor-vessel-vrinda-kerala/destinaion/detail/_mattancherry-palace.jpg?w=724&hash=98396d808fcd8551e711d387e423e46f" />
+  <p><strong>Location:</strong> Mattancherry, Kochi</p>
+  <p><strong>Timings:</strong> 9:45 AM – 1:00 PM, 2:00 PM – 4:45 PM (Closed Fri)</p>
+  <p><strong>Entry Fee:</strong> ₹5</p>
+  <p><strong>Highlights:</strong> Murals, Royal Artifacts, Kerala History</p>
+
+  <h2>3. Marine Drive</h2>
+  <img class="sub" src="https://keralatourism.travel/images/tourist-places/marine-drive-kochi/marine-drive-kochi-tourism-opening-time-closing.jpg" />
+  <p><strong>Location:</strong> Ernakulam</p>
+  <p><strong>Timings:</strong> All day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Walkway, Backwater View, Boating</p>
+
+  <h2>4. Jew Town & Paradesi Synagogue</h2>
+  <img class="sub" src="https://i.ytimg.com/vi/u8aUbbpRyPI/maxresdefault.jpg" />
+  <p><strong>Location:</strong> Mattancherry, Kochi</p>
+  <p><strong>Timings:</strong> 10:00 AM – 1:00 PM, 2:00 PM – 5:00 PM (Closed Fri, Sat)</p>
+  <p><strong>Entry Fee:</strong> ₹10</p>
+  <p><strong>Highlights:</strong> Antique Shops, Synagogue, Jewish Heritage</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//Kovalam.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Kovalam</h1>
+
+  <h2>1. Lighthouse Beach</h2>
+  <img class="sub" src="https://www.keralatourism.org/images/destination/large/lighthouse_beach_kovalam20131031110741_432_1.jpg" />
+  <p><strong>Location:</strong> Kovalam</p>
+  <p><strong>Timings:</strong> 6:00 AM – 6:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Lighthouse Climb, Swimming, Sunset View</p>
+
+  <h2>2. Hawah Beach</h2>
+  <img class="sub" src="https://i.ytimg.com/vi/yid3r4vQHwk/maxresdefault.jpg" />
+  <p><strong>Location:</strong> Beside Lighthouse Beach</p>
+  <p><strong>Timings:</strong> Open all day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Calm Waters, Fishermen’s Activities, Serenity</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+  
+</body>
+</html>
+
+//kumarakom.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Kumarakom</h1>
+
+  <h2>1. Kumarakom Bird Sanctuary</h2>
+  <img class="sub" src="https://thumbs.dreamstime.com/z/kumarakom-bird-sanctuary-kerala-india-also-known-as-vembanad-situated-kottayam-district-indian-state-85884997.jpg" />
+  <p><strong>Location:</strong> Near Vembanad Lake, Kumarakom</p>
+  <p><strong>Timings:</strong> 6:00 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹100 (Indians), ₹200 (Foreigners)</p>
+  <p><strong>Highlights:</strong> Migratory Birds, Nature Walks, Photography</p>
+
+  <h2>2. Vembanad Lake</h2>
+  <img class="sub" src="https://www.holidify.com/images/cmsuploads/compressed/Scenes_fom_Vembanad_lake_en_route_Alappuzha_Kottayam48_20180324212726.jpg" />
+  <p><strong>Location:</strong> Kumarakom</p>
+  <p><strong>Timings:</strong> All Day (Houseboats as per booking)</p>
+  <p><strong>Entry Fee:</strong> Depends on houseboat package</p>
+  <p><strong>Highlights:</strong> Backwaters, Houseboat Stay, Sunset Views</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//munnar.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Munnar</h1>
+
+  <h2>1. Eravikulam National Park</h2>
+  <img class="sub" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/f4/8a/7c.jpg" />
+  <p><strong>Location:</strong> Rajamalai, 13 km from Munnar</p>
+  <p><strong>Timings:</strong> 7:30 AM – 4:00 PM (Closed Feb–Mar)</p>
+  <p><strong>Entry Fee:</strong> ₹200 (Indian), ₹500 (Foreigner)</p>
+  <p><strong>Highlights:</strong> Nilgiri Tahr, Anamudi Peak, Wildlife Viewing</p>
+
+  <h2>2. Mattupetty Dam & Lake</h2>
+  <img class="sub" src="https://www.keralam.me/wp-content/uploads/2019/03/Mattupetty_Dam_Munnar.jpg" />
+  <p><strong>Location:</strong> 13 km from Munnar</p>
+  <p><strong>Timings:</strong> 9:30 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹10 (Boating extra ₹300–₹700)</p>
+  <p><strong>Highlights:</strong> Boating, Lake View, Photography Spot</p>
+
+  <h2>3. Top Station</h2>
+  <img class="sub" src="https://www.tourmyindia.com/states/kerala/images/Top-Station-Munnar-1.jpg" />
+  <p><strong>Location:</strong> 32 km from Munnar</p>
+  <p><strong>Timings:</strong> Daylight hours</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Panoramic Views, Neelakurinji Flowers (seasonal)</p>
+
+  <h2>4. Tea Museum (KDHP)</h2>
+  <img class="sub" src="https://www.earthtrip.in/gallery/cityImage/1513928588_Tata.jpg" />
+  <p><strong>Location:</strong> Nallathanni Estate, Munnar</p>
+  <p><strong>Timings:</strong> 10:00 AM – 4:00 PM (Closed Monday)</p>
+  <p><strong>Entry Fee:</strong> ₹100</p>
+  <p><strong>Highlights:</strong> Tea History, Machinery, Tea Tasting</p>
+
+  <h2>5. Kolukkumalai Tea Estate</h2>
+  <img class="sub" src="https://theorganicmagazine.com/wp-content/uploads/2022/09/Kolukkumalai-tea-estate-with-lodge-scaled.jpg" />
+  <p><strong>Location:</strong> 32 km from Munnar (jeep ride required)</p>
+  <p><strong>Timings:</strong> 7:00 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹100</p>
+  <p><strong>Highlights:</strong> World’s Highest Organic Tea Estate, Sunrise Views</p>
+
+  <h2>6. Echo Point</h2>
+  <img class="sub" src="https://live.staticflickr.com/3857/14755620634_109245fdf6_b.jpg" />
+  <p><strong>Location:</strong> 15 km from Munnar</p>
+  <p><strong>Timings:</strong> 6:00 AM – 7:30 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Natural Echo, Lakeside, Hillside Views</p>
+
+  <h2>7. Attukad Waterfalls</h2>
+  <img class="sub" src="https://tse3.mm.bing.net/th/id/OIP.y1dNHpsO9j01PkI69LimqgHaE9?rs=1&pid=ImgDetMain"/>
+  <p><strong>Location:</strong> Between Pallivasal and Munnar</p>
+  <p><strong>Timings:</strong> 9:00 AM – 6:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Waterfall Views, Trekking Trails, Nature Spot</p>
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//Thekkady.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Thekkady</h1>
+
+  <h2>1. Periyar Wildlife Sanctuary</h2>
+  <img class="sub" src="https://www.jonnymelon.com/wp-content/uploads/2019/04/periyar-national-park-28.jpg" />
+  <p><strong>Location:</strong> Thekkady</p>
+  <p><strong>Timings:</strong> 6:00 AM – 7:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹50 (Indians), ₹500 (Foreigners)</p>
+  <p><strong>Highlights:</strong> Boat Safari, Wildlife Viewing, Tiger Reserve</p>
+
+  <h2>2. Periyar Lake</h2>
+  <img class="sub" src="https://hblimg.mmtcdn.com/content/hubble/img/Thekkady/mmt/activities/m_Periyar%20Lake-2_l_443_662.jpg" />
+  <p><strong>Location:</strong> In Periyar Sanctuary</p>
+  <p><strong>Timings:</strong> 7:30 AM – 5:00 PM (Boating slots)</p>
+  <p><strong>Entry Fee:</strong> ₹225–₹300 (for boating)</p>
+  <p><strong>Highlights:</strong> Scenic Boat Cruise, Wildlife Sightings</p>
+
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+  
+</body>
+</html>
+
+//Trivandrum.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Trivandrum</h1>
+
+  <h2>1. Sree Padmanabhaswamy Temple</h2>
+  <img class="sub" src="https://im.indiatimes.in/content/2022/Jul/Ewqd_VRUYAEQvS__62d7ec9096d2d.jfif?w=1200&h=900&cc=1&webp=1&q=75" />
+  <p><strong>Location:</strong> East Fort, Trivandrum</p>
+  <p><strong>Timings:</strong> 3:30 AM – 7:20 PM (varies by ritual)</p>
+  <p><strong>Entry Fee:</strong> Free (Strict dress code)</p>
+  <p><strong>Highlights:</strong> Richest Temple, Dravidian Architecture, Ancient Idol</p>
+
+  <h2>2. Napier Museum</h2>
+  <img class="sub" src="https://www.transindiatravels.com/wp-content/uploads/napier-museum-1.jpg" />
+  <p><strong>Location:</strong> Museum Road, Near Zoo, Trivandrum</p>
+  <p><strong>Timings:</strong> 10:00 AM – 4:45 PM (Closed Monday & Wed forenoon)</p>
+  <p><strong>Entry Fee:</strong> ₹20 (Indian), ₹150 (Foreigner)</p>
+  <p><strong>Highlights:</strong> Historical Artifacts, Kerala Culture, Indo-Gothic Design</p>
+
+  <h2>3. Kovalam Beach</h2>
+  <img class="sub" src="https://pixahive.com/wp-content/uploads/2020/12/kovalam-beach-253563-pixahive.jpg" />
+  <p><strong>Location:</strong> 16 km from Trivandrum</p>
+  <p><strong>Timings:</strong> All day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Lighthouse, Swimming, Ayurvedic Massages</p>
+
+  <h2>4. Agasthyakoodam</h2>
+  <img class="sub" src="https://i.ytimg.com/vi/PiTNXVW434A/maxresdefault.jpg" />
+  <p><strong>Location:</strong> Western Ghats, ~60 km from city</p>
+  <p><strong>Timings:</strong> Seasonal Trek (Jan–Mar)</p>
+  <p><strong>Entry Fee:</strong> ₹500 (Permit required)</p>
+  <p><strong>Highlights:</strong> Trekking, Biodiversity, Rare Herbs</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//Varkala.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Varkala</h1>
+
+  <h2>1. Varkala Cliff</h2>
+  <img class="sub" src="https://i.pinimg.com/736x/cd/6f/f6/cd6ff6fd70f8c185a2339fc7d5d60022.jpg" />
+  <p><strong>Location:</strong> Near Varkala Beach</p>
+  <p><strong>Timings:</strong> Open all day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Sea Views, Cafes, Sunset Point</p>
+
+  <h2>2. Varkala Beach (Papanasam)</h2>
+  <img class="sub" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdPgAt28nqBGI7PqxeTAUIuUqw1l1wNOvPIMuhmEBiKajfsoafVhGepuSJHmzPoNq31wWx2cW1BJk2ewZUcB7wPNcWFSA7Ww-8UXXzOtCUTc44UKlP6Zc_YpwDy8X_BIp_6qRl_Huqomw/s1600/The+stunning+cliff+beach+of+Kerala+at+Varkala.jpg" />
+  <p><strong>Location:</strong> 10 km from Varkala town</p>
+  <p><strong>Timings:</strong> Open all day</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> Spiritual Significance, Swimming, Sunset Views</p>
+
+  <h2>3. Janardanaswamy Temple</h2>
+  <img class="sub" src="https://1.bp.blogspot.com/-sPyx8xTUr_4/Twk93OmRBFI/AAAAAAAAD5o/-3AxGTOO13U/s400/janardana-swami-temple-varkala-13.jpg" />
+  <p><strong>Location:</strong> Near Varkala Beach</p>
+  <p><strong>Timings:</strong> 4:00 AM – 12:00 PM, 5:00 PM – 8:00 PM</p>
+  <p><strong>Entry Fee:</strong> Free</p>
+  <p><strong>Highlights:</strong> 2000-Year-Old Temple, Pilgrimage Site</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
+
+//Wayanad.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munnar</title>
+
+  <style>
+    *{
+      font-family:Arial;
+    }
+    p{
+      text-align:center;
+      font-size:25px;
+    }
+
+    body{
+      width:100vw;
+      height:100vh;
+      background: url('images/background1.png');
+      background-size: cover;
+      
+      background-position: center;
+    }
+    
+    h2{
+      font-size:30px;
+      text-align:center;
+      text-transform: uppercase;
+      margin-top:50px;
+    }
+
+    .sub{
+      width:auto;
+      height:300px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      border-radius:10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <body>
+  <h1 style="font-size:40px; text-align:center; color: rgb(6, 39, 78); text-decoration:underline;">Must-Visit Places in Wayanad</h1>
+
+  <h2>1. Edakkal Caves</h2>
+  <img class="sub" src="https://www.holidify.com/images/compressed/attractions/attr_1600.jpg" />
+  <p><strong>Location:</strong> Ambukutty Mala, 25 km from Kalpetta</p>
+  <p><strong>Timings:</strong> 9:00 AM – 4:00 PM (Closed Mondays)</p>
+  <p><strong>Entry Fee:</strong> ₹50 (Adults)</p>
+  <p><strong>Highlights:</strong> Prehistoric Rock Engravings, Trekking</p>
+
+  <h2>2. Banasura Sagar Dam</h2>
+  <img class="sub" src="https://www.justkerala.in/wp-content/themes/justkerala/thumbimg.php?src=wp-content/uploads/2013/06/Banasura-sagar-dam-Wayanad.jpg&w=735&h=350" />
+  <p><strong>Location:</strong> 21 km from Kalpetta</p>
+  <p><strong>Timings:</strong> 9:00 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹30</p>
+  <p><strong>Highlights:</strong> Boating, Mountain Views, Trekking</p>
+
+  <h2>3. Soochipara Waterfalls</h2>
+  <img class="sub" src="https://www.holidify.com/images/cmsuploads/compressed/100816080236(BannerImage)SOOCHIPPARAWATERFALLSIMAGE-15_20180118201857.JPG" />
+  <p><strong>Location:</strong> Vellarimala, 23 km from Kalpetta</p>
+  <p><strong>Timings:</strong> 9:00 AM – 5:00 PM</p>
+  <p><strong>Entry Fee:</strong> ₹50</p>
+  <p><strong>Highlights:</strong> 3-Tiered Waterfall, Rock Climbing, Nature Trails</p>
+
+  <div style="text-align:center; color:rgb(6, 39, 78); font-size:30px;">
+    <a href="booking.html">Click here for further booking.</a>
+  </div>
+</body>
+</html>
