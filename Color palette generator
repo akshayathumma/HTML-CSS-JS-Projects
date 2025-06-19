@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  border-sizing:border-box;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+body{
+  background:linear-gradient(to right, rgb(254, 247, 33),rgb(254, 158, 212));
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.container{
+  background-color: rgba(0,0,0,0.85);
+  color:white;
+  border-radius:5px;
+  padding:20px;
+  width:100%;
+  max-width:800px;
+  box-shadow:10px 10px 20px rgb(254, 82, 131);
+}
+h1{
+  text-align:center;
+  margin-bottom:15px;
+  position:relative;
+  padding-bottom: 0.5rem;
+}
+h1::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:50%;
+  height:3px;
+  background-color: rgb(226, 43, 162);
+  border-radius: 2px;
+}
+
+#generate-btn{
+  background:linear-gradient(to right,rgb(254, 158, 212), rgb(254, 247, 33));
+  color:black;
+  font-weight:bold;
+  padding:0.8rem 1.5rem;
+  border:none;
+  border-radius:50px;
+  margin-bottom:2rem;
+  font-size:1rem;
+  cursor: pointer;
+}
+
+#generate-btn:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(to right, rgb(254, 247, 33),rgb(254, 158, 212));
+  box-shadow:0 3px 7px rgba(255, 255, 0,0.5);
+}
+#generate-btn:active{
+  transform:translateY(0);
+}
+
+.palette-con{
+  display:grid;
+  gap:10px;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+}
+.color-box{
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 3px 7px rgba(255, 255, 0,0.3); 
+  transition:transform 0.2s;
+  position: relative;
+}
+.color-box:hover{
+  transform:translateY(-5px);
+}
+.color{
+  height:120px;
+  cursor:pointer;
+}
+.color-info{
+  padding:0.7rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size:0.9rem;
+}
+.hex-val{
+  font-size:15px;
+  font-weight:500;
+  letter-spacing: 0.5px;
+  }
+.copy-btn {
+  position: absolute;
+  bottom:0;
+  right: 10px;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: color 0.2s;
+}
+
+.copy-btn:hover {
+  color: white;
+}
+
+@media(max-width:768px){
+  .palette-con{
+    grid-template-columns: repeat(auto-fit,min(100px,1fr));
+  }
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Color Palette Generator</h1>
+    <button id="generate-btn">
+      <i class="fas fa-sync-alt"></i>
+      Generate Palette
+    </button>
+
+    <div class="palette-con">
+      <div class="color-box">
+      <div class="color" style="background-color: #e1f5fe;"></div>
+      <div class="color-info"></div>
+      <span class="hex-val">#E1F5FE</span>
+      <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+    </div>
+
+    <div class="color-box">
+      <div class="color" style="background-color: #a2de85;"></div>
+      <div class="color-info"></div>
+      <span class="hex-val">#A2DE85</span>
+      <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+    </div>
+
+    <div class="color-box">
+      <div class="color" style="background-color: #85c2de;"></div>
+      <div class="color-info"></div>
+      <span class="hex-val">#85C2DE</span>
+      <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+    </div>
+
+    <div class="color-box">
+      <div class="color" style="background-color: #de8593;"></div>
+      <div class="color-info"></div>
+      <span class="hex-val">#DE8593</span>
+      <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+    </div>
+
+    <div class="color-box">
+      <div class="color" style="background-color: #e2e623;"></div>
+      <div class="color-info"></div>
+      <span class="hex-val">#E2E623</span>
+      <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+    </div>
+    </div>
+
+  </div>
+
+  <scrip>
+    function getRandomcolor(){
+  const letters='0123456789ABCDEF';
+  let color="#";
+  for(let i=0;i<6;i++){//coz hex value has 6 length
+    color+=letters[Math.floor(Math.random()*16)];
+  }
+  return color;
+}
+
+function generatepalette(){
+  const colorboxes=document.querySelectorAll('.color-box');
+
+  colorboxes.forEach(box=>{
+
+    const newcolor=getRandomcolor();
+
+    const colorbg=box.querySelector('.color');
+    colorbg.style.backgroundColor=newcolor;
+
+    const hexspan=box.querySelector('.hex-val');
+    hexspan.textContent=newcolor;
+  });
+}
+
+const generatebtn=document.getElementById('generate-btn');
+generatebtn.addEventListener('click',generatepalette);
+
+
+// for copying hexcode
+const copyButtons = document.querySelectorAll('.copy-btn');
+
+// For every copy button
+copyButtons.forEach(function(copy) {//copy is temporary var name
+  copy.addEventListener('click', function() {
+    const colorCode = copy.previousElementSibling.textContent;//gets theelement just before this copy icon inside the same parent.i.e our hexcode
+
+    navigator.clipboard.writeText(colorCode);//navigator.clipboard is a built-in JavaScript API for copying things.
+
+    alert("Copied: " + colorCode);
+  });
+});
+
+  </script>
+</body>
+</html>
